@@ -182,8 +182,17 @@
     
 }
 
-.ex-12-button:hover .ex-12-top-white,
-.ex-12-button:hover .ex-12-bottom-white{
+.ex-12-bottom-white, .ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.ex-12-button .ex-12-top-white,
+.ex-12-button .ex-12-bottom-white{
     animation: contorno linear 1s infinite;
 }
 
@@ -211,11 +220,43 @@
 
 }
 
-.ex-12-bottom-white, .ex-13-bottom-white {
-    position: absolute;
-    bottom: -10px;
-    right: 20%;
-    background: #f5f5f5;
-    width: 60px;
-    height: 20px;
+.ex-13-button .ex-13-top-white,
+.ex-13-button .ex-13-bottom-white
+{
+    animation: gira linear 5s infinite;
 }
+
+@keyframes gira{
+    0%{
+        left: -10px;
+        top: -10px;
+    }
+
+    25%{
+        left: 100%;
+        top: -10px;
+    }
+
+    50%{
+        left: 100%;
+        top: 100%;
+    }
+
+    75%{
+        left: -10px; 
+        top: 100%;       
+    }
+
+    100%{
+        left: -10px;
+        top: -10px;
+    }
+
+
+}
+
+
+
+
+
+
