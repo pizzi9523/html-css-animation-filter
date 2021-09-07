@@ -63,18 +63,18 @@
 }
 
 .ex-7-img{
-    transition: 3s;    
+    transition: filter 3s;    
 }
 .ex-7-img:hover{
-    filter: hue-rotate();
+    filter: hue-rotate(180deg) grayscale(10%);
 }
 
 .ex-8-img{
-    transition: 2s;
+    transition: all 2s;
 }
 
 .ex-8-img:hover{
-    filter: grayscale() saturate();
+    filter: hue-rotate(200deg) saturate(200%);
     border-radius: 10%;
 }
 
